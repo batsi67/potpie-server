@@ -1,1 +1,8 @@
 potpie-ui
+**/.git
+**/.github
+**/__pycache__
+**/*.pyc
+.venv
+dist
+node_modules

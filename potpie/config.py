@@ -130,7 +130,7 @@ class RuntimeConfig:
             redis_user = get_env("REDISUSER", "")
             redis_password = get_env("REDISPASSWORD", "")
             if redis_host:
-                if redis_user and redis_password:
+                if redis_password:
                     redis_url = f"redis://{redis_user}:{redis_password}@{redis_host}:{redis_port}/0"
                 else:
                     redis_url = f"redis://{redis_host}:{redis_port}/0"

@@ -145,7 +145,7 @@ class ConfigProvider:
         redisuser = os.getenv("REDISUSER", "")
         redispassword = os.getenv("REDISPASSWORD", "")
         # Construct the Redis URL
-        if redisuser and redispassword:
+        if redispassword:
             redis_url = f"redis://{redisuser}:{redispassword}@{redishost}:{redisport}/0"
         else:
             redis_url = f"redis://{redishost}:{redisport}/0"
